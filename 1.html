@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>测试标题</title>
+<!-- 先加载requirejs 后加载main -->
+<!-- 加载data-main和下面的js是同时加载异步处理 
+	1 立刻执行的代码放到main.php下面
+	2 分开引用
+	<script src="resource/main"></script>
+	<script src="resource/require.js"></script>
+	 -->
+<script data-main="resource/main" src="resource/require.js"></script>
+</head>
+<body>
+测试内容......
+<button onclick="test()">测试</button>
+</body>
+
+<script>
+function test(){
+require(['jquery'], function( $) {
+console.log(123) // OK
+});
+
+}
+
+
+
+</script>
+</html>
