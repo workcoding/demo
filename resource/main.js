@@ -1,3 +1,4 @@
+
 require.config({
 	// 路径是绝对路径html路径
 	baseUrl: 'resource/app',
@@ -20,14 +21,10 @@ success:success,
 }
 },
 
-	
+    // githubcss插件，引入css样式
 	'bootstrap':{
-		'deps':['jquery']
+		'deps':['jquery','css!../css/bootstrap.min.css']
 	}
-
-	// 'bootstrap':{
-	// 	'deps':['jquery','css!../css/bootstrap.min.js']
-	// }
 }
 
 

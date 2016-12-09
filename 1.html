@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>测试标题</title>
+
+
 <!-- 先加载requirejs 后加载main -->
 <!-- 加载data-main和下面的js是同时加载异步处理 
 	1 立刻执行的代码放到main.php下面
@@ -34,7 +36,7 @@ console.log($) // OK
 // require(['bootstrap'], function(){
 // 	alert($)
 //  })
- require(['hd'], function(f){
+ require(['bootstrap'], function(f){
  f.success();
  })
 
